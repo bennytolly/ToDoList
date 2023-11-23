@@ -34,24 +34,24 @@ struct RemindersElenchi: View {
             .toolbar {
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Modifica Elenchi")
+                        Text("Edit Lists")
                         Image(systemName: "info.circle")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Modelli")
+                        Text("Templates")
                         Image(systemName: "checkmark.circle")})
                 }
                 
                 ToolbarItem (placement: .bottomBar)
                 { Button(action: {}, label: {
                     Image (systemName: "plus.circle.fill")
-                    Text("Promemoria") }) }
+                    Text("New Reminder") }) }
                 
                 ToolbarItem (placement: .bottomBar)
                 { Button(action: {}, label: {
-                    Text("Aggiungi elenco") }) }
+                    Text("Add List") }) }
             }
             
         } .searchable(text: $searchText)

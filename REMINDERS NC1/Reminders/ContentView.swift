@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         
         
-        NavigationView {
+       // NavigationView {
             /* HStack { Spacer ()
              Menu("",systemImage: "ellipsis.circle")
              {Button("Modify list", action: {})
@@ -76,43 +76,43 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Mostra informazioni elenco")
+                        Text("Show List Info")
                         Image(systemName: "info.circle")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Seleziona promemoria")
+                        Text("Select Reminders")
                         Image(systemName: "checkmark.circle")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Ordina per")
+                        Text("Sort by")
                         Image(systemName: "arrow.up.arrow.down")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Mostra completati")
+                        Text("Hide Completed")
                         Image(systemName: "eye")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Salva come modello")
+                        Text("Save as Template")
                         Image(systemName: "plus.square.on.square")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Stampa")
+                        Text("Print")
                         Image(systemName: "printer")})
                 }
                 
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
-                        Text("Elimina elenco")
+                        Text("Delete List")
                         Image(systemName: "xmark.bin")
                     })
                 }
@@ -121,8 +121,8 @@ struct ContentView: View {
                 ToolbarItem (placement: .bottomBar) 
                 { Button(action: {}, label: {
                     Image (systemName: "plus.circle.fill")
-                    Text("Promemoria") })
-                    .padding(.trailing, 250.0) }
+                    Text("New Reminder") })
+                    .padding(.trailing, 230.0) }
                 
                 
             }
@@ -133,7 +133,7 @@ struct ContentView: View {
              TextField()
              })
              .navigationTitle("Aggiungi Promemoria")}*/
-        }
+      //  }
     }
 }
 
