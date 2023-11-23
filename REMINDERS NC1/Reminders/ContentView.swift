@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         
         
-       // NavigationView {
+      //  NavigationView {
             /* HStack { Spacer ()
              Menu("",systemImage: "ellipsis.circle")
              {Button("Modify list", action: {})
@@ -32,6 +32,7 @@ struct ContentView: View {
                             Image(systemName: reminder.isCompleted ? "circle.fill" : "circle")
                                 .foregroundColor(.purple)
                             Text(reminder.name)
+                                .strikethrough(reminder.isCompleted)
                         }
                     }
                     
@@ -72,7 +73,8 @@ struct ContentView: View {
             
             
             .navigationTitle("WORK")
-            
+        
+
             .toolbar {
                 ToolbarItem(placement:.secondaryAction ) {
                     NavigationLink(destination: {}, label: {
@@ -117,24 +119,40 @@ struct ContentView: View {
                     })
                 }
                 
-                // allineare a sinistra
-                ToolbarItem (placement: .bottomBar) 
+                ToolbarItem (placement: .bottomBar)
                 { Button(action: {}, label: {
                     Image (systemName: "plus.circle.fill")
                     Text("New Reminder") })
-                    .padding(.trailing, 230.0) }
+                    // .padding(.trailing, 230.0)
+                }
                 
                 
             }
+            Spacer()
             
-            /*  .sheet (isPresented: $showsheet) {
-             NavigationView(
-             List {
-             TextField()
-             })
-             .navigationTitle("Aggiungi Promemoria")}*/
-      //  }
+            
+                Button(action: {}, label: {
+                    Image (systemName: "plus.circle.fill")
+                    Text("New Reminder") })
+                .padding()
+                
+                
+                
+               
+            
+            
+        
+        
+        
+        /*  .sheet (isPresented: $showsheet) {
+         NavigationView(
+         List {
+         TextField()
+         })
+         }*/
+        //  }
     }
+    
 }
 
 #Preview {

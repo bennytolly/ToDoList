@@ -26,10 +26,10 @@ class ReminderItem : Identifiable {
 class remindersModel: ObservableObject, Identifiable{
     
      @Published var reminderList = [
-        ReminderItem(id: UUID(), name: "Write paper", isCompleted: true),
+        ReminderItem(id: UUID(), name: "Write paper", isCompleted: false),
         ReminderItem(id: UUID(), name: "Call client", isCompleted: false),
         ReminderItem(id: UUID(), name: "Study book", isCompleted: true),
-        ReminderItem(id: UUID(), name: "Send mail to Mike", isCompleted: false)
+        ReminderItem(id: UUID(), name: "Send mail to Mike", isCompleted: true)
     ]
     
     
