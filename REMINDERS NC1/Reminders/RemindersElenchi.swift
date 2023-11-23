@@ -21,9 +21,9 @@ struct RemindersElenchi: View {
             List {
                 ForEach (reminderElenchi.elenchi)
                 { elenco in
-                    
                     HStack{
                         elenco.icon
+                        .foregroundColor(elenco.iconColor)
                         Text(elenco.name)
                         NavigationLink("", destination: ContentView())
                         }
